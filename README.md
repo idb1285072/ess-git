@@ -15,3 +15,15 @@ git add .
 git commit -m 'message' -> commit
 git log
 ```
+
+# Topics
+
+- Cloning Project
+- Create new Branch
+- Stash, Add, Commit and Push
+- Pull and Fetch Remote Branch
+- Merge Branches
+- Create Merge Request
+- .gitignore and Git Hooks
+- Interactive Rebase (Intro)
+- Merge Conflict Resolution
