@@ -191,17 +191,3 @@ git push origin main
 git branch -d feature/login-page
 git push origin --delete feature/login-page
 ```
-
----
-
-| Command                             | Purpose                           |
-| ----------------------------------- | --------------------------------- |
-| `git merge branch`                  | Merge another branch into current |
-| `git merge --no-ff branch`          | Always create a merge commit      |
-| `git merge --squash branch`         | Combine commits into one          |
-| `git merge --abort`                 | Cancel a merge in progress        |
-| `git merge -X ours/theirs`          | Auto-resolve conflicts            |
-| `git revert -m 1 <sha>`             | Undo a merge commit               |
-| `git checkout --ours/theirs file`   | Resolve conflict manually         |
-| `git branch -d <branch>`            | Delete merged local branch        |
-| `git push origin --delete <branch>` | Delete merged remote branch       |

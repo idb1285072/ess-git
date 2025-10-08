@@ -67,7 +67,6 @@ Prefer `git stash push -m "..."` (modern) over the older `git stash save`.
 
 # Add — staging changes
 
-
 ```bash
 git add path/to/file
 git add .
@@ -141,7 +140,6 @@ git diff             # differences between worktree and index (what's not staged
 ---
 
 # Push — publish commits to GitHub (remote)
-
 
 ```bash
 # push the current branch to 'origin' and set upstream (first time)
@@ -224,4 +222,23 @@ git commit -S
 # push
 git push -u origin branch
 git push --force-with-lease origin branch
+```
+
+---
+
+## Commit Message Best Practise
+
+- feat: New feature
+- fix: Bug fix
+- docs: Documentation changes
+- style: Formatting, no logic change
+- refactor: Code change, no feature/bug fix
+- test: Adding or fixing tests
+- chore: Build, tooling, CI/CD updates
+
+```bash
+feat(auth): add JWT-based login flow
+
+Implements token-based authentication for mobile clients.
+Closes #42
 ```

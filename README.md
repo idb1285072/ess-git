@@ -27,3 +27,4 @@ git log
 - .gitignore and Git Hooks
 - Interactive Rebase (Intro)
 - Merge Conflict Resolution
+
