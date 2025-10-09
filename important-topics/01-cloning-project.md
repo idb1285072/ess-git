@@ -13,56 +13,9 @@ So cloning = downloading + linking.
 ## Command
 
 ```bash
-git clone https://github.com/username/repository.git
+git clone https://github.com/username/repository.git folder_name #CLONE
+git clone -b branch-name https://github.com/user/repo.git #CLONE Branch
+git remote -v #check fetch and push
+git remote show origin 
+git clone --depth 1 https://github.com/username/repository.git #Shallow Cloning (faster) latest version not full history
 ```
-
-Git does the following under the hood:
-
-1. **Creates a new folder** with the same name as the repo.
-2. **Initializes** a new `.git` folder (this is your local Git database).
-3. **Downloads all objects and refs** (commits, branches, tags).
-4. **Checks out** the default branch (usually `main` or `master`).
-5. **Sets the remote** named `origin` to the GitHub URL.
-
-### Check Remote Connection
-
-```bash
-git remote -v
-```
-
-You’ll see something like:
-
-```bash
-origin  https://github.com/username/repository.git (fetch)
-origin  https://github.com/username/repository.git (push)
-```
-
-This means your local repo is linked to the GitHub repo.
-
----
-
-### Verify Branches
-
-```bash
-git branch -a
-```
-
-- `* main` — current branch.
-- `remotes/origin/main` — remote branch.
-
-If you want to switch branches:
-
-```bash
-git checkout branch_name
-```
-
----
-
-## Shallow Cloning (Faster Option)
-
-If you only want the latest version (not the full history), use:
-
-```bash
-git clone --depth 1 https://github.com/username/repository.git
-```
-

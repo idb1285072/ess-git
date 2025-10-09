@@ -51,8 +51,8 @@ git checkout -b branch_name #CREATE & NAVIGATE
 git fetch origin
 git checkout main
 git pull origin main
-git checkout main
-git merge my_branch
+git checkout my_branch
+git merge main
 ```
 
 - push to GitHub my_branch
@@ -76,5 +76,3 @@ git branch -r #see exiting remote branches
 git checkout -b feature/login-page origin/feature/login-page
 git switch -t origin/feature/login-page #new syntax
 ```
-
-a
