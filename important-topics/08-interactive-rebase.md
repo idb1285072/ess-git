@@ -21,4 +21,3 @@ git rebase -i
 - split a commit into multiple smaller ones
 
 ---
-
