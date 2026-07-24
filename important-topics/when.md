@@ -111,3 +111,4 @@ git push origin feature/login
    - `git merge origin/main` or `git rebase origin/main` → integrate latest changes
 
 6. `git push -u origin feature/my-feature` → open pull request
+7. `git push`
